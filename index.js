@@ -2,7 +2,7 @@ const println = (msg, ...args) => console.log(msg, ...args)
 
 println("--- Pi Estimate Demo in NodeJS (5 March 2020/Thr) ---")
 
-const estimate = (times) => {
+const estimatePi = (times) => {
   let a = 0
   for (let i=0;i < times;i++) {
     let x = Math.random()
@@ -15,6 +15,6 @@ const estimate = (times) => {
   return 4.0*a/times
 }
 
-let pi = estimate(10000)
+let pi = estimatePi(10000)
 println("Estimated pi-> ", pi)
 
